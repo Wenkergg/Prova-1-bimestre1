@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head >
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="/Logo_MeuQuiz_.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Prova 1º Bim</title>
+
+</head>
+
+<body>
+    <header>
+	<script language=javascript>
+senha = '1234We';
+senhadig = prompt("Digite a senha","")
+if (senha != senhadig){
+alert('Acesso negado!');
+top.location.href='erro.htm';
+}
+</script>
+         
+        <h1>Prova 1º Bimestre - Informática Aplicada -EEAVP</h1>
+    </header>
+
+    <section>
+
+        <p>Questão </p>
+        <h2>Area da pergunta</h2>
+
+        <div id = 'Botoes'>
+            <input id="index" type="hidden" value="1">
+            <input id="respostaCorreta" type="hidden" value="1">
+
+            <button id = 'botao1' onclick="clicouBotao(this), this.disabled=true;">Resposta 1</button>
+            <button id = 'botao2' onclick="clicouBotao(this), this.disabled=true;">Resposta 2</button>
+            <button id = 'botao3' onclick="clicouBotao(this), this.disabled=true;">Resposta 3</button>
+            <button id = 'botao4' onclick="clicouBotao(this), this.disabled=true;">Resposta 4</button>
+            <button id = 'ProximaQuest' onclick="proximaQuestao()">Proxima</button>
+            <button id = 'refazer' onClick="window.print()">Imprimir</button>
+            <p id = 'info'>EEAVP - 2024 </a></p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer></footer>
+</body>
+
+</html>
